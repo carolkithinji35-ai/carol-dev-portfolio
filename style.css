@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--bg);
+  font-family: "Google Sans", sans-serif;
+
+  --primary: rgb(114, 114, 180);
+  --secondary: #f5f5f5;
+  --tertiary: #ffc107;
+  --text-main: #333333;
+  --bg: #ffffff;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(29, 29, 29, 0.922);
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+header p {
+  color: var(--primary);
+  font-size: 2rem;
+  font-family: "google sans", sans-serif;
+  font-weight: 700;
+}
+.logo-span {
+  color: var(--tertiary);
+}
+ul {
+  display: flex;
+  gap: 1.2rem;
+}
+ul li {
+  list-style-type: none;
+  font-family: "Google Sans", sans-serif;
+}
+ul li a {
+  text-decoration: none;
+  color: var(--secondary);
+  transition: all 200ms ease-in-out;
+}
+ul li a:hover {
+  color:var(--primary);
+}
+ul li a:active {
+  color: #6ab66d;
+}
+#hero {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  height: 100vh;
+  color: rgb(189, 189, 189);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 4px;
+  line-height: 1.6;
+  gap: 1.5rem;
+}
+#hero h1 {
+  text-align: center;
+  font-size: 3.5rem;
+  color: var(--primary);
+}
+#hero p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.description {
+  font-size: 1.1rem;
+  color: var(--secondary);
+}
+.cta-section {
+  display: flex;
+  gap: 2rem;
+}
+.cta-section button {
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  border: none;
+  transition: all 200ms ease-in-out;
+  font-family: "google sans", sans-serif;
+  font-size: 1rem;
+  background-color: var(--tertiary);
+  font-weight: 700;
+}
+.cta-section button:hover {
+  box-shadow: rgba(102, 102, 103, 0.952) 0px 2px 8px 0px;
+  background-color: rgb(255, 253, 255);
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+.about-me{
+  width: 100%;
+  margin: 0 auto;
+  background-color: #f3f3f3;
+  padding: 2rem 1rem;
+}
+.about-me h2{
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: .85rem;
+}
+.about-me p{
+  font-size: 1.2rem;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+#projects {
+  padding: 2rem;
+}
+
+#projects h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--primary);
+  font-size: 2rem;
+}
+
+.project-cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+
+
+.project-card {
+  background-color: var(--secondary);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  transition: transform 300ms, box-shadow 300ms;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.project-card p{
+  color: rgb(109, 108, 108);
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+
+.project-btn {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.project-btn button {
+  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
+  border: none;
+  background-color: var(--tertiary);
+  
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.project-btn button:hover {
+  background-color: var(--primary);
+  color: var(--text-light);
+}
+.project-btn a{
+  color: white;
+  text-decoration: none;
+  font-family: 'google sans',sans-serif;
+}
+
+
+
+#contact-me {
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: var(--secondary);
+}
+
+#contact-me h2 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+#contact-me .icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 1.8rem;
+  color: var(--primary);
+}
+
+#contact-me .icons i:hover {
+  color: var(--tertiary);
+  cursor: pointer;
+}
+#contact-me a{
+  color: var(--primary);
+}
+
+
+footer {
+  background-color: rgba(29, 29, 29, 0.922);
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+
+@media screen and (max-width: 992px) {
+  .project-cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .cta-section {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  #hero h1 {
+    font-size: 2.5rem;
+  }
+  #hero p.description {
+    font-size: 1rem;
+  }
+  .project-cards-container {
+    grid-template-columns: 1fr; 
+  }
+  .project-btn {
+    flex-direction: column;
+    display: inline;
+  }
+}
