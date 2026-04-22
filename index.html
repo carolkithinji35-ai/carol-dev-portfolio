@@ -3,170 +3,461 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Carol's porfolio site</title>
+    <title>Portfolio - Junior Software Developer</title>
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
   </head>
   <body>
     <header>
-      <p>Carol<span class="logo-span">.</span></p>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#about-me">About</a></li>
+      <nav class="container">
+        <div class="logo">
+          carol<span style="color: var(--accent-gold)">.</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact-me">Contact</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
 
-    <main>
-      <section id="hero">
-        <div class="intro">
-          <p>Hi</p>
-          <h1>I am <a href="https://github.com/carolkithinji35-ai">Carol Kithinji</a></h1>
-          <p class="description">
-            Junior Web Developer in training | Aspiring Full Stack Software
-            Developer
+    <section class="hero">
+      <div class="container">
+        <p class="greeting">Hi, I'm</p>
+        <h1>Carol Kithinji</h1>
+        <p class="role">
+          Junior Frontend Developer | Aspiring Full-Stack Developer
+        </p>
+        <p class="tagline">
+          Self-taught developer building beautiful, functional web experiences.
+        </p>
+        <div class="cta-buttons">
+          <a href="#contact" class="btn btn-primary">Hire Me</a>
+          <a href="#projects" class="btn btn-secondary">View Projects</a>
+          <a href="#cv" class="btn btn-secondary">Download CV</a>
+        </div>
+        <div class="hero-socials">
+          <a
+            href="mailto:carolkithinji35@gmail.com"
+            title="Email"
+            aria-label="Email"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+              ></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </a>
+          <a
+            href="https://github.com/carolkithinji35-ai"
+            target="_blank"
+            title="GitHub"
+            aria-label="GitHub"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+              ></path>
+            </svg>
+          </a>
+          <a
+            href="https://linkedin.com/in/carolkithinji"
+            target="_blank"
+            title="LinkedIn"
+            aria-label="LinkedIn"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+              ></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <p>
+            I'm a self-taught junior frontend developer making a purposeful
+            transition into the tech industry. My journey has been driven by
+            curiosity, determination, and a genuine love for problem-solving
+            through code. I specialize in creating responsive, user-friendly
+            interfaces and believe in continuous learning and staying current
+            with industry best practices.
+          </p>
+          <p style="margin-top: 20px">
+            What sets me apart is my commitment to understanding not just how
+            things work, but why they work. Through self-directed learning and
+            hands-on projects, I've built a solid foundation in frontend
+            development. I approach each project as an opportunity to learn and
+            improve, bringing enthusiasm and dedication to every line of code I
+            write. Currently expanding my skills with React, I'm actively
+            seeking opportunities to contribute to meaningful projects while
+            growing my technical expertise in a collaborative environment.
           </p>
         </div>
-        <div class="cta-section">
-          <button class="hire-btn">Hire me</button>
-          <button class="download-btn">Download CV</button>
+      </div>
+    </section>
+
+    <section class="approach">
+      <div class="container">
+        <h2 class="section-title">My Goal & Approach</h2>
+        <div class="approach-grid">
+          <div class="approach-card">
+            <div class="approach-icon">🎯</div>
+            <h3>My Goal</h3>
+            <p>
+              To grow as a full-stack developer by working on real-world
+              projects, learning from experienced professionals, and
+              continuously improving my skills.
+            </p>
+          </div>
+          <div class="approach-card">
+            <div class="approach-icon">💡</div>
+            <h3>My Approach</h3>
+            <p>
+              I believe in writing clean, maintainable code and solving problems
+              methodically. I'm not afraid to ask questions and always eager to
+              learn new technologies.
+            </p>
+          </div>
         </div>
-      </section>
-      <section id="about-me" class="about-me">
-        <h2>About Me</h2>
-        <p>
-          I started my journey into web development as a self-taught learner,
-          driven by curiosity and a strong desire to build something meaningful.
-          Starting on my own taught me discipline, consistency, and ability to
-          solve problems independently. I learned how to stay commited even when
-          things felt challenging, and how to keep improving through practice
-          and research. <br />
-          As I continued growing, I made the decision to join Moringa School to
-          gain structured learning, deepen my technical skills and collaborate
-          with other aspiring developers.This transition has helped me
-          strengthen my foundation in HTML,CSS and JavaScript while also
-          improving how i approach real-world projects. <br />
-          Beyond technical skills, self-teaching has shaped my mindset.I have
-          developed strong time management, patience, adaptability, and a
-          willingness to learn continuously.I enjoy building clean,
-          user-friendly interfaces and I am passionate about growing into a Full
-          Stack Software Developer who creates impactful digital solutions
-        </p>
-        
-      </section>
-      <section id="skills">
-          <h2>Skills</h2>
-          <div class="skills-container">
-            <div class="skills-card">
-            <h3> Frontend Skills</h3>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Frontend Development</h3>
             <ul>
-              <li>HTML & CSS</li>
-              <li>JavaScript</li>
+              <li>HTML5 & CSS3</li>
+              <li>JavaScript (ES6+)</li>
               <li>Responsive Design</li>
+              <li>UI/UX Principles</li>
             </ul>
           </div>
-          <div class="skills-card">
-            <h3> Tools&Technologies</h3>
+          <div class="skill-category">
+            <h3>Tools & Technologies</h3>
             <ul>
-              <li>Git & Github</li>
+              <li>Git & GitHub</li>
+              <li>API Integration</li>
               <li>VS Code</li>
-              <li>AI API Integration</li>
+              <li>Problem Solving</li>
             </ul>
           </div>
-          <div class="skills-card">
-            <h3> Currently Learning</h3>
+          <div class="skill-category">
+            <h3>Currently Learning</h3>
             <ul>
-              <li>Advanced Javascript</li>
               <li>React</li>
+              <li>Advanced JavaScript</li>
               <li>Backend Development</li>
+              <li>Full-Stack Integration</li>
             </ul>
           </div>
-          </div>
-          
-        
-      </section>
-      
-      <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-cards-container">
-          <div class="project-card">
-            <h3>Personal Website</h3>
-            <p>
-              A responsive page to designed to showcase my skills and projects.
-              Built using HTML and CSS, it demonstrates my ability to structure
-              we pages, apply styling, and CSS Grid for layout design.
-            </p>
-            <div class="project-btn">
-              <button><a href="">Live Source</a></button>
-            </div>
-          </div>
-          <div class="project-card">
-            <h3>Swahili Proverb Generator</h3>
-            <p>
-              An interactive web application that generates traditional Swahili
-              proverbs with their meanings. Celebrates African cultural wisdom
-              through technology
-            </p>
-            <div class="project-btn">
-              
-              <button><a href="https://github.com/carolkithinji35-ai/AI-swahili-proverb-generator" target="_blank">Live Source</a></button>
-            </div>
-          </div>
-          <div class="project-card">
-            <h3>Weather App</h3>
-            <p>
-              A real-time weather application that fetches and displays current
-              weather data for any location using a weather API. Features
-              include temperature, humidity, wind speed, and weather conditions.
-            </p>
-            <div class="project-btn">
-              <button><a href="https://github.com/carolkithinji35-ai/my-weather-application" target="_blank">Live Source</a></button>
-            </div>
-          </div>
-          <div class="project-card">
-            <h3>Calculator Simulator</h3>
-            <p>
-              A JavaScript program that simulates a basic calculator. It
-              performs addition, subtraction, multiplication, and division,
-              while tracking all calculations in a history log.
-            </p>
-            <div class="project-btn">
-              <button><a href="https://github.com/carolkithinji35-ai/calculator-simulator-project" target="_blank">Live Source</a></button>
-            </div>
-            
-          </div>
-          <div class="project-card">
-            <h3>Recipe Generator</h3>
-            <p>
-              An AI-powered recipe generator that creates customized recipes based on user input and preferences. Helps users discover new meals and cooking ideas with intelligent suggestions. 
-            </p>
-            <div class="project-btn">
-              <button><a href="https://github.com/carolkithinji35-ai/recipe-generator" target="_blank">Live Source</a></button>
-            </div>
-          
         </div>
-      </section>
-      <section id="contact-me">
-        <h2>Contact Me</h2>
+      </div>
+    </section>
 
-        <div class="icons">
-          <a href="mailto:carolkithinji35@gmail.com"><i class="fa-regular fa-envelope"></i></a>
-         <a href="https://www.linkedin.com/in/carol-kithinji/" target="_blank"> <i class="fa-brands fa-linkedin-in"></i></a>
-          <a href="https://github.com/carolkithinji35-ai" target="_blank"><i class="fa-brands fa-github"></i></a>
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-content">
+              <h3>Weather App</h3>
+              <p>
+                A real-time weather application that fetches and displays
+                current weather data for any location using a weather API.
+                Features include temperature, humidity, wind speed, and weather
+                conditions.
+              </p>
+              <div class="tech-stack">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">API</span>
+              </div>
+              <div class="project-links">
+                <a href="https://cnk-weather-app.netlify.app/" class="btn btn-primary" target="_blank">Live Demo</a>
+                <a href="https://github.com/carolkithinji35-ai/my-weather-application" class="btn btn-secondary" target="_blank">Source Code</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-content">
+              <h3>World Clock</h3>
+              <p>
+                An interactive world clock application that displays real-time
+                time zones across different cities globally. Helps users track
+                time differences and schedule across multiple locations.
+              </p>
+              <div class="tech-stack">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">API</span>
+              </div>
+              <div class="project-links">
+                <a href="https://lorac-world-clock.netlify.app/" class="btn btn-primary" target="_blank">Live Demo</a>
+                <a href="https://github.com/carolkithinji35-ai/World-clock-project" class="btn btn-secondary" target="_blank">Source Code</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-content">
+              <h3>Swahili Proverb Generator</h3>
+              <p>
+                An interactive web application that generates traditional
+                Swahili proverbs with their meanings. Celebrates African
+                cultural wisdom through technology.
+              </p>
+              <div class="tech-stack">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="https://swahili-proverbs-generator.netlify.app/" class="btn btn-primary" target="_blank">Live Demo</a>
+                <a href="https://github.com/carolkithinji35-ai/AI-swahili-proverb-generator" class="btn btn-secondary" target="_blank">Source Code</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-content">
+              <h3>Recipe Generator</h3>
+              <p>
+                An AI-powered recipe generator that creates customized recipes
+                based on user input and preferences. Helps users discover new
+                meals and cooking ideas with intelligent suggestions.
+              </p>
+              <div class="tech-stack">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">AI API</span>
+              </div>
+              <div class="project-links">
+                <a href="https://recipe-generatorcnk.netlify.app/" class="btn btn-primary" target="_blank">Live Demo</a>
+                <a href="https://github.com/carolkithinji35-ai/recipe-generator" class="btn btn-secondary" target="_blank">Source Code</a>
+              </div>
+            </div>
+          </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
 
-    <footer>&copy; Carol. 2026 All rights reserved</footer>
+    <section id="cv" class="cv-download">
+      <div class="container">
+        <h2 class="section-title" style="color: white">Download My CV</h2>
+        <p>Interested in learning more about my background and experience?</p>
+        <a href="#" class="btn" download>Download CV (PDF)</a>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+          <form
+            class="contact-form"
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+            onsubmit="handleSubmit(event)"
+          >
+            <input type="hidden" name="form-name" value="contact" />
+            <p style="display: none">
+              <label
+                >Don't fill this out if you're human: <input name="bot-field"
+              /></label>
+            </p>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%">
+              Send Message
+            </button>
+          </form>
+          <div class="contact-info">
+            <p style="color: var(--text-light); margin-top: 30px">
+              Or reach out directly:
+            </p>
+            <div class="social-links">
+              <a
+                href="mailto:carolkithinji35@gmail.com"
+                title="Email"
+                aria-label="Email"
+              >
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  ></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </a>
+              <a
+                href="https://github.com/carolkithinji35-ai"
+                target="_blank"
+                title="GitHub"
+                aria-label="GitHub"
+              >
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                href="https://linkedin.com/in/carolkithinji"
+                target="_blank"
+                title="LinkedIn"
+                aria-label="LinkedIn"
+              >
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                  ></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p><strong>Carol Kithinji</strong> - Junior Frontend Developer</p>
+        <p>Building the future, one line of code at a time.</p>
+        <div class="footer-links">
+          <a
+            href="https://github.com/carolkithinji35-ai"
+            target="_blank"
+            aria-label="GitHub"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+              ></path>
+            </svg>
+            GitHub
+          </a>
+          <a
+            href="https://linkedin.com/in/carolkithinji"
+            target="_blank"
+            aria-label="LinkedIn"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+              ></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+            LinkedIn
+          </a>
+          <a href="mailto:carolkithinji35@gmail.com" aria-label="Email">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+              ></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            Email
+          </a>
+        </div>
+        <p style="margin-top: 20px; font-size: 0.9rem">
+          &copy; CAROL .   2026 All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
